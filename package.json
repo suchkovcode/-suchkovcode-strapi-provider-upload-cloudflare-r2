@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Plugin to upload Strapi media files to Cloudflare R2",
   "main": "index.js",
+  "author": "Nikita Suchkov",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/suchkovcode/strapi-provider-upload-cloudflare-r2"
   },
-  "author": "Nikita Suchkov",
   "keywords": [
     "Strapi",
     "upload",
