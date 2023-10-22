@@ -1,0 +1,21 @@
+{
+  "name": "@suchkovcode/strapi-provider-upload-cloudflare-r2",
+  "version": "1.0.0",
+  "description": "Plugin to upload Strapi media files to Cloudflare R2",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Nikita Suchkov",
+  "keywords": [
+    "Strapi",
+    "upload",
+    "Cloudflare"
+  ],
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.433.0"
+  }
+}
