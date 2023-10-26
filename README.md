@@ -49,34 +49,30 @@ module.exports = ({ env }) => ({
 
 ```javascript
 module.exports = ({ env }) => [
-  // ...
-  {
-    name: "strapi::security",
+ {
+    name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "dl.airtable.com",
-            env("R2_PUBLIC_URL").replace(/^https?:\/\//, ""),
-          ],
-          "media-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "dl.airtable.com",
-            env("R2_PUBLIC_URL").replace(/^https?:\/\//, ""),
-          ],
+          'connect-src': ["'self'", 'http:', 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'dl.airtable.com', "imagedelivery.net",  env("CF_PUBLIC_ACCESS_URL")],
+          'media-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'dl.airtable.com', "imagedelivery.net", env("CF_PUBLIC_ACCESS_URL")],
+          frameAncestors: ['http://localhost:*', 'self'],
           upgradeInsecureRequests: null,
         },
       },
     },
   },
-  // ...
+  'strapi::cors',
+  'strapi::errors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
 ];
 ```
 
