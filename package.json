@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Nikita Suchkov",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/suchkovcode/strapi-provider-upload-cloudflare-r2"
@@ -16,6 +16,6 @@
     "Cloudflare"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.433.0"
+    "@aws-sdk/client-s3": "^3.436.0"
   }
 }
