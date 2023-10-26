@@ -5,7 +5,7 @@ A Strapi plugin for uploading files to Cloudflare R2
 ## Installation
 
 ```bash
-npm i @suchkovcode/strapi-provider-upload-r2
+npm i @suchkovcode/strapi-provider-upload-cloudflare-r2
 ```
 
 ## Environment Variables
