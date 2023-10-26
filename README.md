@@ -31,7 +31,7 @@ module.exports = ({ env }) => ({
   // ...
   upload: {
     config: {
-      provider: "@suchkovcode/strapi-provider-upload-r2",
+    provider: "@suchkovcode/strapi-provider-upload-cloudflare-r2",
       providerOptions: {
         accessKeyId: env("R2_ACCESS_KEY_ID"),
         secretAccessKey: env("R2_SECRET_ACCESS_KEY"),
